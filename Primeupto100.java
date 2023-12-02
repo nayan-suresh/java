@@ -1,24 +1,21 @@
-class primeupto100
+class Primeupto100
 {
     public static void main(String args[])
     {
-        int n=100;
-        int i,j,count=0;
+        int i,j,n=100;
         for(i=2;i<=n;i++)
         {
-            count=0;
-        }
-        for(j=2;j<i;j++)
-        {
-            if(i%j==0)
+            int count=0;
+            for(j=2;j<i;j++)
             {
-                count++;
+                if(i%j==0)
+                {
+                    count++;
+                    break;
+                }
             }
-        }
-        if(count==0)
-        {
+            if(count==0)
             System.out.println(i+"");
         }
-
     }
 }
